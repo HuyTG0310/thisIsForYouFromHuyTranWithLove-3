@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A special gift for my special girl</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="preload">
+    <!-- Enhanced animated background -->
+    <div class="bubbles" id="bubbles"></div>
+    <div class="bg-hearts" id="bgHearts"></div>
+
+    <div class="container">
+        <!-- Calculator screen -->
+        <div class="calculator-screen" id="calculatorScreen">
+            <div class="input-avatar-row">
+                <div class="avatar-square">
+                    <img id="avatarImg" src="img/Trân đi qs.jpg" alt="Avatar" style="display:block;">
+                </div>
+                <div class="input-and-keypad">
+                    <div class="calculator-title">Nhập birthday vô đây nè người đẹp</div>
+                    <input type="password" class="display" id="display" placeholder="••••••••" maxlength="8">
+                    <div class="buttons">
+                        <button class="btn btn-number" onclick="appendToDisplay('1')">1</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('2')">2</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('3')">3</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('4')">4</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('5')">5</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('6')">6</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('7')">7</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('8')">8</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('9')">9</button>
+                        <button class="btn btn-clear" onclick="clearDisplay()">C</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('0')">0</button>
+                        <button class="btn btn-enter" onclick="checkPassword()">✓</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Birthday screen nằm ngoài container -->
+    <div class="birthday-screen" id="birthdayScreen" style="display:none;">
+        <!-- Trang lời chúc đẹp -->
+        <div class="wishes-page" id="wishesPage">
+            <div class="main-title">
+                <h1 class="rainbow-text">💗CHÚC MỪNG SINH NHẬT💗</h1>
+                <div class="subtitle">Ngọc Trân</div>
+                <p style="font-weight: bold; color: purple;">Trân đọc thiệp trước khi mở quà nhé</p>
+
+                <!-- <div class="subtitle">Trân đọc thiệp trước khi mở quà nhee</div> -->
+            </div>
+            
+            <!-- Thiệp 3D -->
+            <div class="birthday-card-section">
+                <div class="card-3d">
+                    <div class="card-imgBox">
+                        <div class="card-bark"></div>
+                        <img src="img/Trân đi qs.jpg" alt="Birthday">
+                    </div>
+                    <div class="card-details">
+                        <h4>Happy Birthday Ngọc Trânnn</h4>
+                        <p>Chúc cậu sinh nhật vui vẻee,</p>
+                        <p>Tuổi mới ngày càng học giỏi, đẹp gái</p>
+                        <p>Chúc cậu mọi đều luôn suôn sẻ.</p>
+                        <p>Và hy vọng rằng cậu sẽ luôn mỉm cười.</p>
+                        <p>Tại vì nó xinh áaaaa.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="continue-btn" onclick="showLetter()">
+                Mở quà nè
+            </button>
+        </div>
+        
+    <!-- Gallery trái tim nằm ngoài container để nổi bật -->
+    <div id="heartGallery" class="heart-gallery" style="display:none;"></div>
+    <script src="lang.js"></script>
+</body>
+</html>
