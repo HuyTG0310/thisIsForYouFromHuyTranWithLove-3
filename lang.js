@@ -111,9 +111,9 @@ function appendToDisplay(value) {
 }
 
         const birthdayLines = [
-            "Chúc bạn có một ngày sinh nhật thật vui vẻ và ý nghĩa!",
+            "Chúc cậu có một ngày sinh nhật thật vui vẻ và ý nghĩa!",
             "Tuổi mới tràn đầy sức khỏe, hạnh phúc và thành công!",
-            "Mong rằng mọi ước mơ của bạn sẽ trở thành hiện thực trong năm nay!",
+            "Mong rằng mọi ước mơ của cậu sẽ trở thành hiện thực trong năm nay!",
             "🌸 Happy Birthday! 🌸"
         ];
 
